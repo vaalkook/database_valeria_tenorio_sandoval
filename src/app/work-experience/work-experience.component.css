@@ -1,0 +1,57 @@
+.experience-section {
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border-left: 12px solid #1976d2;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0d47a1;
+  font-family: 'Outfit', sans-serif;
+}
+
+.experience-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+  border-left: 5px solid #1976d2;
+}
+
+.experience-card:hover {
+  transform: scale(1.01);
+}
+
+.experience-header {
+  margin-bottom: 8px;
+}
+
+.experience-position {
+  font-size: 18px;
+  color: #0d47a1;
+  margin-bottom: 4px;
+}
+
+.experience-company {
+  font-size: 14px;
+  color: #666;
+}
+
+.experience-dates {
+  font-size: 14px;
+  color: #1976d2;
+  margin: 6px 0;
+}
+
+.experience-details {
+  font-size: 14px;
+  color: #444;
+  padding-left: 18px;
+}

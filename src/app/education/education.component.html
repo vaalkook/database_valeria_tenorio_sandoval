@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educación</title>
+  <style>
+    .education-section {
+      margin-bottom: 2rem;
+    }
+
+    .education-card {
+      background-color: #e3f2fd;
+      border-left: 4px solid #1976d2;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .education-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .education-title {
+      font-size: 1.1rem;
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .education-school {
+      font-style: italic;
+      color: #1565c0;
+    }
+
+    .education-meta {
+      font-size: 0.85rem;
+      color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="education-section" *ngIf="educationList.length > 0">
+    <div class="education-card" *ngFor="let edu of educationList">
+      <div class="education-header">
+        <div class="education-title">{{ edu.degree }}</div>
+        <div class="education-school">{{ edu.institution }}</div>
+      </div>
+      <div class="education-meta">{{ edu.startYear }} - {{ edu.endYear }}</div>
+      <p class="education-description">{{ edu.description }}</p>
+    </div>
+  </section>
+</body>
+</html>

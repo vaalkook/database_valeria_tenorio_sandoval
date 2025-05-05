@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idiomas</title>
+  <style>
+    .languages-section {
+      margin-bottom: 2rem;
+    }
+
+    .language-card {
+      background-color: #e3f2fd;
+      border-left: 4px solid #1976d2;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .language-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .language-certified {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #1565c0;
+    }
+
+    .certified-label {
+      font-weight: bold;
+      color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="languages-section" *ngIf="languages.length > 0">
+    <div class="language-card" *ngFor="let language of languages">
+      <div class="language-header">
+        <span>{{ language.name }}</span>
+        <span>{{ language.proficiency }}</span>
+      </div>
+      <div class="language-certified" *ngIf="language.certified">
+        <span class="certified-label">Certificación:</span> Sí
+      </div>
+      <div class="language-certified" *ngIf="!language.certified">
+        <span class="certified-label">Certificación:</span> No
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="perfil-container">
+  <div class="perfil-izquierda">
+    <img [src]="header.photoUrl" alt="Foto de perfil" class="foto-perfil" />
+    <div class="info-personal">
+      <h1 class="nombre">{{ header.name }}</h1>
+      <p class="meta">{{ header.goalLife }}</p>
+    </div>
+  </div>
+
+  <div class="perfil-derecha">
+    <ul class="contacto">
+      <li><strong>Email:</strong> {{ header.email }}</li>
+      <li><strong>Teléfono:</strong> {{ header.phoneNumber }}</li>
+      <li><strong>Ubicación:</strong> {{ header.location }}</li>
+      <li><strong>Instagram:</strong> {{ header.socialNetwork }}</li>
+    </ul>
+  </div>
+</div>

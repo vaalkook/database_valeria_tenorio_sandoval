@@ -1,0 +1,17 @@
+<section class="experience-section">
+  <h2 class="section-title">Experiencia Laboral</h2>
+
+  <div class="experience-card" *ngFor="let job of workExperience">
+    <div class="experience-header">
+      <div class="experience-position">{{ job.position }}</div>
+      <div class="experience-company">{{ job.company }}</div>
+    </div>
+    <div class="experience-dates">
+      <b>Desde:</b> {{ job.startDate }} &nbsp;
+      <b>Hasta:</b> {{ job.endDate }}
+    </div>
+    <ul class="experience-details">
+      <li *ngFor="let task of job.accomplishments">{{ task }}</li>
+    </ul>
+  </div>
+</section>

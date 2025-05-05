@@ -1,0 +1,28 @@
+.languages-section {
+  margin-bottom: 2rem;
+}
+
+.language-card {
+  background-color: #fff;
+  border-left: 4px solid #c8102e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.language-certified {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #2e7d32;
+}
+
+.certified-label {
+  font-weight: bold;
+}

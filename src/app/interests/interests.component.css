@@ -1,0 +1,28 @@
+.interests-section {
+  margin-bottom: 2rem;
+}
+
+.interests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.interest-card {
+  background-color: #fff;
+  border-left: 4px solid #c8102e;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.interest-name {
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.interest-meta {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}

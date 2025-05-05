@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidades</title>
+  <style>
+    .skills-section {
+      margin-bottom: 2rem;
+    }
+
+    .skill-card {
+      background-color: #e3f2fd;
+      border-left: 4px solid #1976d2;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-name {
+      font-size: 1.1rem;
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .skill-category {
+      font-style: italic;
+      color: #1565c0;
+    }
+
+    .skill-bar {
+      height: 8px;
+      background-color: #bbdefb;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 0.5rem 0;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background-color: #1976d2;
+      width: 0;
+      transition: width 0.5s ease;
+    }
+
+    .skill-meta {
+      font-size: 0.85rem;
+      color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="skills-section" *ngIf="skills.length > 0">
+    <div class="skill-card" *ngFor="let skill of skills">
+      <div class="skill-header">
+        <div class="skill-name">{{ skill.name }}</div>
+        <div class="skill-category">Experiencia: {{ skill.yearsofExperience }} año(s)</div>
+      </div>
+      <div class="skill-bar">
+        <div
+          class="skill-fill"
+          [style.width]="getSkillBarWidth(skill.level)"
+        ></div>
+      </div>
+      <div class="skill-meta">Nivel: {{ skill.level }}</div>
+    </div>
+  </section>
+
+</body>
+</html>

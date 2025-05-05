@@ -1,0 +1,36 @@
+.work-experience-section {
+  margin-bottom: 2rem;
+}
+
+.work-card {
+  background-color: #fff;
+  border-left: 4px solid #c8102e;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.work-company {
+  font-style: italic;
+  color: #444;
+}
+
+.work-dates {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-description ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #333;
+}

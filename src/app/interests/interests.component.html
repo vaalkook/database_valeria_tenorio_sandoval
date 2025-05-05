@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intereses Personales</title>
+  <style>
+    .interests-section {
+      margin-bottom: 2rem;
+    }
+
+    .interests-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .interest-card {
+      background-color: #e3f2fd;
+      border-left: 4px solid #1976d2;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .interest-name {
+      font-size: 1.05rem;
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .interest-meta {
+      color: #1565c0;
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="interests-section" *ngIf="interests.length > 0">
+    <div class="interests-list">
+      <div class="interest-card" *ngFor="let interest of interests">
+        <div class="interest-name">{{ interest.name }}</div>
+        <div class="interest-meta">
+          Nivel: {{ interest.level }} | Desde: {{ interest.startYear }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

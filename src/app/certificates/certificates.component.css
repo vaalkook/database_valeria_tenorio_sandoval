@@ -1,0 +1,28 @@
+.education-section {
+  margin-bottom: 2rem;
+}
+
+.education-card {
+  background-color: #fff;
+  border-left: 4px solid #1e3a8a;  
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #1e3a8a;
+}
+
+.education-school {
+  font-style: italic;
+  color: #4b6b91;
+  border: 1px solid #4b6b91;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
